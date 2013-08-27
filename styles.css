@@ -1,0 +1,109 @@
+
+@charset "UTF-8";
+
+@font-face {
+  font-family: "untitled-font-1";
+  src:url("fonts/untitled-font-1.eot");
+  src:url("fonts/untitled-font-1.eot?#iefix") format("embedded-opentype"),
+    url("fonts/untitled-font-1.ttf") format("truetype"),
+    url("fonts/untitled-font-1.svg#untitled-font-1") format("svg"),
+    url("fonts/untitled-font-1.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "untitled-font-1";
+  content: attr(data-icon);
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none !important;
+  speak: none;
+  display: inline-block;
+  text-decoration: none;
+  width: 1em;
+  line-height: 1em;
+  -webkit-font-smoothing: antialiased;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "untitled-font-1";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none !important;
+  speak: none;
+  display: inline-block;
+  text-decoration: none;
+  width: 1em;
+  line-height: 1em;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+.icon-arrow-right:before {
+  content: "a";
+}
+
+.icon-arrow-left:before {
+  content: "b";
+}
+
+
+
+.arrow {
+  margin: 100px 0 0 100px;
+  cursor: pointer;
+}
+
+.arrow .icon {
+  margin: 18px 0 0 22px;
+  font-size: 24px;
+  color: #ffffff;
+  position: absolute;
+}
+
+
+.arrow .square {
+  width: 42px;
+  height: 42px;  
+  margin: 9px 0 0 9px;
+  background: rgb(221, 41, 49);
+  position: absolute;
+  -webkit-transform:scale(1) rotate(45deg);
+     -moz-transform:scale(1) rotate(45deg);
+      -ms-transform:scale(1) rotate(45deg);
+       -o-transform:scale(1) rotate(45deg);
+          transform:scale(1) rotate(45deg);
+  overflow: hidden;    
+  -webkit-transition: all 0.3s ease-out;
+     -moz-transition: all 0.3s ease-out;
+       -o-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out;
+}
+.arrow img {
+  width: 60px;
+  margin: -9px 0 0 -9px;
+  opacity: 0;
+  -webkit-transform: rotate(-45deg);
+  -webkit-transition:opacity 0.3s ease-out;
+     -moz-transition:opacity 0.3s ease-out;
+       -o-transition:opacity 0.3s ease-out;
+          transition:opacity 0.3s ease-out;
+}
+
+
+.arrow:hover .square {
+  -webkit-transform:scale(1.5) rotate(45deg);
+     -moz-transform:scale(1.5) rotate(45deg);
+      -ms-transform:scale(1.5) rotate(45deg);
+       -o-transform:scale(1.5) rotate(45deg);
+          transform:scale(1.5) rotate(45deg);
+}
+
+.arrow:hover img {
+  opacity: 1;
+}
